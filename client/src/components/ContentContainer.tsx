@@ -1,6 +1,7 @@
 import TopNavigation from './TopNavigation';
 import { BsPlusCircleFill } from 'react-icons/bs';
 import { Switch , Route} from "react-router-dom"
+import FlyToBoon from './FlyToBoon';
 // import { useState } from 'react';
 
 const ContentContainer = () => {
@@ -16,7 +17,7 @@ const ContentContainer = () => {
                 <Settings/>
             </Route>
             <Route path="/moon">
-                <Moon/>
+                <FlyToBoon/>
             </Route>
             <Route path="/feed">
                 <Feed/>
