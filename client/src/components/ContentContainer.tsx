@@ -2,13 +2,15 @@ import TopNavigation from './TopNavigation';
 import { BsPlusCircleFill } from 'react-icons/bs';
 import { Switch , Route} from "react-router-dom"
 import FlyToBoon from './FlyToBoon';
-// import { useState } from 'react';
+import React from 'react';
+import Slots from './Slots';
+import BlackJack from './blackJack/BlackJack';
 
 const ContentContainer = () => {
   return (
     <div className='content-container'>
       <TopNavigation />
-      <div className='content-list'>
+      <div className='content-list h-screen'>
           <Switch>
             <Route exact path="/">
                 <Home/>
@@ -16,14 +18,14 @@ const ContentContainer = () => {
             <Route path="/settings">
                 <Settings/>
             </Route>
-            <Route path="/moon">
-                <FlyToBoon/>
+            <Route path="/jack">
+                <BlackJack/>
             </Route>
             <Route path="/feed">
                 <Feed/>
             </Route>
-            <Route path="/double">
-                <Double/>
+            <Route path="/Slots">
+                <Slots id = {1} owned = {1} close = {false} expires = {false}/>
             </Route>
           </Switch>
        </div>

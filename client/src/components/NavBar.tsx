@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { BsPlus, BsFillLightningFill, BsGearFill } from 'react-icons/bs';
 import { FaFire, FaPoo } from 'react-icons/fa';
 import { BsCoin } from 'react-icons/bs'
-import { GiAirplaneDeparture } from 'react-icons/gi'
+import { GiAirplaneDeparture,GiCardAceHearts } from 'react-icons/gi'
+import { SiApplearcade } from "react-icons/si";
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,11 +24,11 @@ export default class NavBar extends Component {
             <SideBarIcon icon={<BsCoin size="28" />}  text = {"About"}/>
         </Link>
         <Divider />
-        <Link to = "/moon">
-            <SideBarIcon icon={<GiAirplaneDeparture size="32"/>} text = {"Fly too Moon"}/>
+        <Link to = "/jack">
+            <SideBarIcon icon={<GiCardAceHearts size="32"/>} text = {"Black jack"}/>
         </Link>
-        <Link to = "/double">
-            <SideBarIcon icon={<BsFillLightningFill size="20" />} text = {"Double game"}/>
+        <Link to = "/Slots">
+            <SideBarIcon icon={<SiApplearcade size="20" />} text = {"Slots"}/>
         </Link>
         <Link to = "/feed">
             <SideBarIcon icon={<FaPoo size="20" />}  text = {"Feed"}/>

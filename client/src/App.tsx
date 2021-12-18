@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import Bar from './components/Bar';
 import ContentContainer from './components/ContentContainer';
 import NavBar from './components/NavBar';

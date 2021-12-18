@@ -1,0 +1,25 @@
+.pot{
+    width: 60px;
+    margin: auto;
+    position: relative;
+    color: white;
+}
+
+.cancelBet{
+    position: absolute;
+    top: -9px;
+    right: -11px;
+    color: #fff;
+    background-color: #ffc107;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.cancelBet:hover{
+    background-color: #e0a800;
+    opacity: 0.8;
+}

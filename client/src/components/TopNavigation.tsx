@@ -1,3 +1,4 @@
+import React from 'react';
 import {
     FaSearch,
     FaHashtag,
@@ -6,17 +7,28 @@ import {
     FaMoon,
     FaSun,
   } from 'react-icons/fa';
+import { connect } from 'react-redux';
   import useDarkMode from '../hooks/useDarkMode';
   
-  const TopNavigation = () => {
+  const mapStateToProps = state => ({
+    value: state.currentMoney,
+})
+
+
+
+  const Navigation = (value:any) => {
+    console.log(value);
     return (
       <header className='top-navigation'>
         <ThemeIcon />
         <BellIcon />
         <UserCircle />
+        <div className="balance">{value.value + '$'}</div>
       </header>
     );
   };
+
+  const TopNavigation = connect(mapStateToProps)(Navigation);
   
   const ThemeIcon = () => {
     const [darkTheme, setDarkTheme] = useDarkMode();
